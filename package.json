@@ -1,0 +1,16 @@
+{
+  "name": "scrap_grades",
+  "version": "1.0.0",
+  "description": "WebScrapping ufal grades",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Agra",
+  "license": "ISC",
+  "dependencies": {
+    "diff": "^4.0.1",
+    "promptly": "^3.0.3",
+    "puppeteer": "^1.14.0"
+  }
+}
