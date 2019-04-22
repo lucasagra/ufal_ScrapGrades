@@ -9,7 +9,7 @@ This app requires [Node.js](https://nodejs.org/) to run.
 Install the dependencies.
 
 ```sh
-$ npm init
+$ npm install
 ```
 
 Run app
