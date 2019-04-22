@@ -18,4 +18,4 @@ $ node app
 ```
 
 
-**Open config.js to choose settings
+**Open config.js to choose settings**
