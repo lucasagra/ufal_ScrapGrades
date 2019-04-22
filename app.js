@@ -1,18 +1,15 @@
-const puppeteer = module.require('./puppeteer');
-const diff = module.require('diff');
 const fs = require('fs');
 const promptly = require('promptly');
+const diff = require('diff');
 
+const puppeteer = module.require('./puppeteer');
 const config = module.require('./config');
 
-
-start()
-
+start();
 
 async function start() {
     try {
         const cpf = await promptly.prompt('Type your CPF: ');
-
         const password = await promptly.password('Type your password: ', {
             replace: '*'
         });
@@ -20,7 +17,7 @@ async function start() {
         console.log(" --- Starting bot --- ");
 
         deployBot(cpf, password);
-        setInterval(deployBot(cpf, password), 1000 * 60 * config.minutes);
+        setInterval(() => deployBot(cpf, password), 1000 * 60 * config.minutes);
     } catch (err) {
         throw err;
     }

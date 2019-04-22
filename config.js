@@ -1,8 +1,8 @@
 module.exports = {
 
     headless: true,
-    // Headless:false muda o tipo do bot para abrir o navegador
+    // Headless:false shows the browser when bot activated
 
     minutes: 15
-    // De quanto em quantos minutos o bot acionará
+    // Interval to bot activation
 }
