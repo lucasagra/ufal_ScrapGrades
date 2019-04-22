@@ -20,7 +20,7 @@ async function start() {
         console.log(" --- Starting bot --- ");
 
         deployBot(cpf, password);
-        setInterval(deployBot, 1000 * 60 * config.minutes);
+        setInterval(deployBot(cpf, password), 1000 * 60 * config.minutes);
     } catch (err) {
         throw err;
     }
